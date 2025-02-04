@@ -19,3 +19,35 @@
     top: 89px;
     left: 323px
 }
+
+#strikje{
+    position: absolute;
+    top: -19px;
+    right: -26px;
+    width: 90px;
+    transform: rotate(35deg);
+}
+
+#strikjeTwee{
+    position: absolute;
+    top: -19px;
+    left: -26px;
+    width: 90px;
+    transform: rotate(-35deg);
+}
+
+#strikjeDrie{
+    position: absolute;
+    top: 486px;
+    left: -30px;
+    width: 90px;
+    transform: rotate(35deg);
+}
+
+#strikjeVier{
+    position: absolute;
+    top: 487px;
+    right: -26px;
+    width: 90px;
+    transform: rotate(-35deg);
+}
