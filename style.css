@@ -1,7 +1,3 @@
-#body{
-    height: 100%;
-}
-
 #achtergrond {
     width: 1528px;
     height: 738px;
@@ -50,4 +46,29 @@
     right: -26px;
     width: 90px;
     transform: rotate(-35deg);
+}
+
+#middenRechthoek span#Vraag{
+    position: absolute;
+    top: 65px;
+    left: 102px;
+    font-size: 88px;
+    font-family: 'LucySaidOK', sans-serif;
+    color: white;
+}
+
+#middenRechthoek span#vraagteken{
+    position: absolute;
+    top: 82px;
+    right: 107px;
+    font-size: 88px;
+    font-family: 'Harrington', sans-serif;
+    color: white;
+}
+
+@font-face {
+    font-family: 'LucySaidOK';
+    src: url('fonts/lucy-said-ok-font/LucySaidOkPersonalUseItalic-OV9ee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
