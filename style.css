@@ -1,4 +1,21 @@
 #body{
- 
+    height: 100%;
 }
 
+#achtergrond {
+    width: 1528px;
+    height: 738px;
+    background-color: #ed6eb0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#middenRechthoek{
+    width: 528px;
+    height: 738px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
