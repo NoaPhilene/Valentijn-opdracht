@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+
+        form {
+            position: absolute;
+            top: 300px; /* Distance from the top of the page */
+            left: 200px;
+            
+            
+        }
+
+        input[type="submit"] {
+            width: 200px; /* Set width of the button */
+            height: 50px; /* Set height of the button */
+            font-size: 18px; /* Set font size of the button text */
+            padding: 10px; /* Add padding inside the button */
+        }
+
+        input[value="Yes"]{
+            position: absolute;
+            top: 0px; /* Distance from the top of the page */
+            left: 250px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <body style="background-color: #f89dcc;"></body>
+    <div id="achtergrond"></div>
+    <div id="middenRechthoek">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikje">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeTwee">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeDrie">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeVier">
+        <span id="Vraag">Will you be my valentine</span>
+        <span id="vraagteken">?</span>
+
+        <form action = "SecondPage.html">
+            <input type="submit" value="No">
+        </form>
+
+        <form action = "YesPage.html">
+            <input type="submit" value="Yes">
+        </form>
+
+    </div>
+
+</body>
+</html>

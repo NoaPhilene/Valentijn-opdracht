@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myBtn {
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Fifth page</h1>
+    
+    
+    
+
+    <button type="button" id="myBtn" onclick="myFunction()">Click me</button>
+
+    <script>
+        function myFunction() {
+
+            var randomLeft = Math.floor(Math.random() * window.innerWidth); // Random left position
+            var randomTop = Math.floor(Math.random() * window.innerHeight); // Random top position
+            document.getElementById("myBtn").style.position = "absolute"; // Ensure the button is positioned absolutely
+            document.getElementById("myBtn").style.left = randomLeft + "px";
+            document.getElementById("myBtn").style.top = randomTop + "px";
+
+        }
+
+        
+        
+    </script>
+
+</body>
+
+</html>
