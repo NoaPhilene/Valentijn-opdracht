@@ -78,3 +78,33 @@ audio {
     right: 271px;
     top: 410px;
 }
+
+#hellokitty{
+    position: absolute;
+    right: 162px;
+    top: 306px;
+    width: 173px;
+}
+
+#beMine{
+    position: absolute;
+    right: 479px;
+    top: 347px;
+    width: 173px;
+    transform: rotate(35deg);
+}
+
+#choco{
+    position: absolute;
+    right: 445px;
+    top: 347px;
+    width: 181px;
+    transform: rotate(25deg);
+}
+#roodHart{
+    position: absolute;
+    right: 445px;
+    top: 330px;
+    width: 221px;
+    transform: rotate(25deg);
+}
