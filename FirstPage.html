@@ -31,22 +31,6 @@
             top: 0px; /* Distance from the top of the page */
             left: 250px;
         }
-
-        .hearts{
-        font-size: 40px;
-        font-weight: bold;
-        position: fixed;
-        top:-10vh;
-        transform: translateY(0%);
-        left:0;
-        animation: fall 1s ease-in infinite;
-    }
-    @keyframes fall{
-        to{
-            transform: translateY(250vh);
-        }
-    }
-
     </style>
 
 </head>
@@ -81,32 +65,7 @@
           </audio>
 
     </div>
-    <div class="container"></div>
+    
 
 </body>
-<script>
-
-    function hearts(){
-    
-        const container = document.querySelector('.container');
-    
-        const creat = document.createElement('div');
-        creat.classList.add('hearts');
-        creat.innerHTML = '❤️';
-    
-        creat.style.left = Math.random() * 100 + 'vw';
-        creat.style.animationDuration = Math.random()* 2 + 3 + 's';
-    
-        container.appendChild(creat)
-        setTimeout (() => {
-            creat.remove();
-        },3000);
-    
-    }
-    
-    hearts();
-    
-    setInterval(hearts, 1);
-    
-    </script>
 </html>
