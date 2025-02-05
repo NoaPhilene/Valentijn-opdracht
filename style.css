@@ -72,3 +72,9 @@
     font-weight: normal;
     font-style: normal;
 }
+
+audio {
+    position: absolute;
+    right: 271px;
+    top: 410px;
+}
