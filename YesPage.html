@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>They said yes!</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .container{
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(255, 0, 128, 0.419);
-    }
-    .hearts{
-        font-size: 40px;
-        font-weight: bold;
-        position: fixed;
-        top:-10vh;
-        transform: translateY(0%);
-        left:0;
-        animation: fall 1s ease-in infinite;
-    }
-    @keyframes fall{
-        to{
-            transform: translateY(250vh);
-        }
-    }
+<body>
+    <div id="achtergrond"></div>
+    <div id="middenRechthoek">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikje">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeTwee">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeDrie">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeVier">
+        <img src="assets\cute-removebg-preview.png" id="cute">
 
-    #middenRechthoek{
+        <span id="Text">Omg i knew you would say yes</span>
+    </div>
+    
+    <div class="container"></div>
+
+</body>
+<style>
+#achtergrond {
+    width: 1528px;
+    height: 738px;
+    background-color: #e54196;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 0, 128, 0.419);
+}
+.hearts{
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    top:-10vh;
+    transform: translateY(0%);
+    left:0;
+    animation: fall 1s ease-in infinite;
+}
+@keyframes fall{
+    to{
+        transform: translateY(250vh);
+    }
+}
+
+#middenRechthoek{
     width: 850px;
     height: 538px;
     background-color: #fe8fbf;
@@ -39,14 +62,63 @@
     top: 89px;
     left: 323px
 }
+
+#strikje{
+    position: absolute;
+    top: -19px;
+    right: -26px;
+    width: 90px;
+    transform: rotate(35deg);
+}
+
+#strikjeTwee{
+    position: absolute;
+    top: -19px;
+    left: -26px;
+    width: 90px;
+    transform: rotate(-35deg);
+}
+
+#strikjeDrie{
+    position: absolute;
+    top: 486px;
+    left: -30px;
+    width: 90px;
+    transform: rotate(35deg);
+}
+
+#strikjeVier{
+    position: absolute;
+    top: 487px;
+    right: -26px;
+    width: 90px;
+    transform: rotate(-35deg);
+}
+
+@font-face {
+    font-family: 'LucySaidOK';
+    src: url('fonts/lucy-said-ok-font/LucySaidOkPersonalUseItalic-OV9ee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#middenRechthoek span#Text{
+    position: absolute;
+    top: 65px;
+    left: 69px;
+    font-size: 88px;
+    font-family: 'LucySaidOK', sans-serif;
+    color: white;
+}
+
+#cute{
+    position: absolute;
+    top: 240px;
+    right: 321px;
+    width: 185px;
+}
+
 </style>
-<body>
-    <div id="middenRechthoek"></div>
-    
-    <div class="container"></div>
-
-</body>
-
 <script>
 
 function hearts(){
