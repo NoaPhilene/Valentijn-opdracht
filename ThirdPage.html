@@ -1,51 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page3</title>
 
     <style>
-
         form {
             position: absolute;
-            top: 300px; /* Distance from the top of the page */
+            top: 300px;
+            /* Distance from the top of the page */
             left: 200px;
-            
-            
+
+
         }
 
         input[type="submit"] {
-            width: 200px; /* Set width of the button */
-            height: 50px; /* Set height of the button */
-            font-size: 18px; /* Set font size of the button text */
-            padding: 10px; /* Add padding inside the button */
+            width: 200px;
+            /* Set width of the button */
+            height: 50px;
+            /* Set height of the button */
+            font-size: 20px;
+            /* Set font size of the button text */
+            font-family: 'Lucida Calligraphy', sans-serif;
+            color: white;
+            border: 2px solid #ffffff;
+            /* witte rand*/
+            border-radius: 10px;
+            padding: 9px;
+            /* Add padding inside the button */
+            background-color: #f86fa5;
         }
 
-        input[value="Yes"]{
+        input[value="Yes"] {
             position: absolute;
-            top: 0px; /* Distance from the top of the page */
+            top: 0px;
+            /* Distance from the top of the page */
             left: 250px;
         }
 
+        #achtergrond {
+            width: 1528px;
+            height: 738px;
+            background-color: #e54196;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #middenRechthoek {
+            width: 850px;
+            height: 538px;
+            background-color: #fe8fbf;
+            position: absolute;
+            top: 89px;
+            left: 323px
+        }
+
+        #strikje {
+            position: absolute;
+            top: -19px;
+            right: -26px;
+            width: 90px;
+            transform: rotate(35deg);
+        }
+
+        #strikjeTwee {
+            position: absolute;
+            top: -19px;
+            left: -26px;
+            width: 90px;
+            transform: rotate(-35deg);
+        }
+
+        #strikjeDrie {
+            position: absolute;
+            top: 486px;
+            left: -30px;
+            width: 90px;
+            transform: rotate(35deg);
+        }
+
+        #strikjeVier {
+            position: absolute;
+            top: 487px;
+            right: -26px;
+            width: 90px;
+            transform: rotate(-35deg);
+        }
+
+        #middenRechthoek span#Vraag {
+            position: absolute;
+            top: 65px;
+            left: 250px;
+            font-size: 88px;
+            font-family: 'LucySaidOK', sans-serif;
+            color: white;
+        }
+
+        #middenRechthoek span#vraagteken {
+            position: absolute;
+            top: 82px;
+            right: 220px;
+            font-size: 88px;
+            font-family: 'Harrington', sans-serif;
+            color: white;
+        }
+
+        @font-face {
+            font-family: 'LucySaidOK';
+            src: url('fonts/lucy-said-ok-font/LucySaidOkPersonalUseItalic-OV9ee.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
     </style>
 
 
 
 
 </head>
+
 <body>
 
-    <h1>Third page</h1>
+    <body style="background-color: #f89dcc;"></body>
+    <div id="achtergrond"></div>
+    <div id="middenRechthoek">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikje">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeTwee">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeDrie">
+        <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeVier">
 
-    <form action = "FourthPage.html">
-        <input type="submit" value="No">
-    </form>
+        <span id="Vraag">Are you sure</span>
+        <span id="vraagteken">?</span>
 
-    <form action = "YesPage.html">
-        <input type="submit" value="Yes">
-    </form>
+        <form action="FourthPage.html">
+            <input type="submit" value="No">
+        </form>
+
+        <form action="YesPage.html">
+            <input type="submit" value="Yes">
+        </form>
+
+
+    </div>
+
+
+
+
 
 
 </body>
+
 </html>
