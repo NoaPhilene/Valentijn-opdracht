@@ -11,7 +11,26 @@
             position: absolute;
             height: 50px;
             width: 200px;
+            top: 300px;
+            left: 200px;
+            font-size: 17px;
         }
+
+
+        input[type="submit"] {
+            width: 200px; /* Set width of the button */
+            height: 50px; /* Set height of the button */
+            font-size: 18px; /* Set font size of the button text */
+            padding: 10px; /* Add padding inside the button */
+        }
+
+        input[value="Yes"]{
+            position: absolute;
+            top: 300px; /* Distance from the top of the page */
+            left: 450px;
+        }
+
+
     </style>
 
 </head>
@@ -20,10 +39,13 @@
 
     <h1>Fifth page</h1>
     
+    <form action = "YesPage.html">
+        <input type="submit" value="Yes">
+    </form>
     
     
 
-    <button type="button" id="myBtn" onclick="myFunction()">Click me</button>
+    <button type="button" id="myBtn" onclick="myFunction()">No</button>
 
     <script>
         function myFunction() {
