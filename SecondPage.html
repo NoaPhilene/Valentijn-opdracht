@@ -33,7 +33,7 @@
             background-color: #f86fa5;
         }
 
-        input[value="Yes"] {
+        input[value="YESS"] {
             position: absolute;
             top: 0px;
             /* Distance from the top of the page */
@@ -90,38 +90,53 @@
             transform: rotate(-35deg);
         }
 
-        #middenRechthoek span#Vraag{
-    position: absolute;
-    top: 65px;
-    left: 102px;
-    font-size: 88px;
-    font-family: 'LucySaidOK', sans-serif;
-    color: white;
-}
+        #middenRechthoek span#Vraag {
+            position: absolute;
+            top: 95px;
+            left: 102px;
+            font-size: 88px;
+            font-family: 'LucySaidOK', sans-serif;
+            color: white;
+        }
 
-        #middenRechthoek span#Misclick {
+        #middenRechthoek span#Error {
             position: absolute;
             top: 20px;
-            left: 210px;
+            left: 220px;
             font-size: 60px;
             font-family: 'LucySaidOK', sans-serif;
             color: white;
         }
 
-        #middenRechthoek span#vraagteken{
-    position: absolute;
-    top: 82px;
-    right: 107px;
-    font-size: 88px;
-    font-family: 'Harrington', sans-serif;
-    color: white;
-}
+        #middenRechthoek span#vraagteken {
+            position: absolute;
+            top: 105px;
+            right: 107px;
+            font-size: 88px;
+            font-family: 'Harrington', sans-serif;
+            color: white;
+        }
 
         @font-face {
             font-family: 'LucySaidOK';
             src: url('fonts/lucy-said-ok-font/LucySaidOkPersonalUseItalic-OV9ee.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+        }
+
+        #heartkitty {
+            position: absolute;
+            right: 20px;
+            top: 250px;
+            width: 173px;
+        }
+
+        #hearts {
+            position: absolute;
+            right: 660px;
+            top: 250px;
+            width: 173px;
+            rotate: 15deg;
         }
     </style>
 
@@ -139,19 +154,22 @@
         <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeDrie">
         <img src="assets\il_1140xN.5984424358_n2ox-removebg-preview.png" id="strikjeVier">
 
+        <img src="assets/tumblr_a872e28aedb1b3716bcc930e38c644cd_15e557d9_500.png" id="heartkitty">
+        <img src="assets/hello-kitty-hearts-pack.png" id="hearts">
+
         <span id="Vraag">Will you be my valentine</span>
         <span id="vraagteken">?</span>
 
-        <span id="Misclick">Uuuhh misclick, try again</span>
-        
+        <span id="Error">Uuuhh error, try again</span>
+
 
 
         <form action="ThirdPage.html">
-            <input type="submit" value="No">
+            <input type="submit" value="No...">
         </form>
 
         <form action="YesPage.html">
-            <input type="submit" value="Yes">
+            <input type="submit" value="YESS">
         </form>
 
 </body>
