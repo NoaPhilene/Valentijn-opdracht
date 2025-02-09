@@ -108,3 +108,10 @@ audio {
     width: 221px;
     transform: rotate(25deg);
 }
+#RozeHartjes{
+    position: absolute;
+    right: 445px;
+    top: 330px;
+    width: 221px;
+    transform: rotate(25deg);
+}
