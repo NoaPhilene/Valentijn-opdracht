@@ -50,7 +50,7 @@
 
 #middenRechthoek span#Vraag{
     position: absolute;
-    top: 65px;
+    top: 95px;
     left: 102px;
     font-size: 88px;
     font-family: 'LucySaidOK', sans-serif;
@@ -59,7 +59,7 @@
 
 #middenRechthoek span#vraagteken{
     position: absolute;
-    top: 82px;
+    top: 105px;
     right: 107px;
     font-size: 88px;
     font-family: 'Harrington', sans-serif;
