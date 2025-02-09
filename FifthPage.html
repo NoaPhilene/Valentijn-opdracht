@@ -5,63 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page5</title>
-
-    <style>
-        #myBtn {
-            position: absolute;
-            height: 50px;
-            width: 200px;
-            top: 300px;
-            left: 200px;
-            font-size: 17px;
-        }
-
-
-        input[type="submit"] {
-            width: 200px; /* Set width of the button */
-            height: 50px; /* Set height of the button */
-            font-size: 18px; /* Set font size of the button text */
-            padding: 10px; /* Add padding inside the button */
-        }
-
-        input[value="Yes"]{
-            position: absolute;
-            top: 300px; /* Distance from the top of the page */
-            left: 450px;
-        }
-
-
-    </style>
-
 </head>
 
 <body>
+    <body style="background-color: #232222;"></body>
+    <div id="achtergrond"></div>
+    <div id="middenRechthoek">
 
-    <h1>Fifth page</h1>
-    
-    <form action = "YesPage.html">
-        <input type="submit" value="Yes">
-    </form>
-    
-    
+    <img src="assets\red bow.png" id="strikje">
+    <img src="assets\red bow.png" id="strikjeTwee">
+    <img src="assets\red bow.png" id="strikjeDrie">
+    <img src="assets\red bow.png" id="strikjeVier">
+    <img src="assets\kitty_knife-removebg-preview.png" id="kittyKnife">
+    <img src="assets\kittyPistol.png" id="kittyPistol">
 
-    <button type="button" id="myBtn" onclick="myFunction()">No</button>
+    <span id="Tekst">omg how sweet of you to say yes</span>    
+
+    <button type="button" id="myBtn" onclick="myFunction()">No i did not</button>
 
     <script>
         function myFunction() {
-
+            
             var randomLeft = Math.floor(Math.random() * window.innerWidth); // Random left position
             var randomTop = Math.floor(Math.random() * window.innerHeight); // Random top position
             document.getElementById("myBtn").style.position = "absolute"; // Ensure the button is positioned absolutely
             document.getElementById("myBtn").style.left = randomLeft + "px";
             document.getElementById("myBtn").style.top = randomTop + "px";
-
-        }
-
-        
-        
+            
+        }     
     </script>
+<style>
 
+#myBtn {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    top: 300px;
+    left: 332px;
+    font-size: 17px;
+    font-family: 'Lucida Calligraphy', sans-serif;
+    color: rgb(0, 0, 0); 
+    border: 2px solid #000000; /* witte rand*/
+    border-radius: 10px;
+    padding: 9px; /* Add padding inside the button */
+    background-color: #d92b2a;
+}
+
+
+input[type="submit"] {
+    width: 200px; /* Set width of the button */
+    height: 50px; /* Set height of the button */
+    font-size: 18px; /* Set font size of the button text */
+    padding: 10px; /* Add padding inside the button */
+}
+
+#achtergrond {
+    width: 1528px;
+    height: 738px;
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#middenRechthoek {
+    width: 850px;
+    height: 538px;
+    background-color: #ff0000;
+    position: absolute;
+    top: 89px;
+    left: 323px
+}
+
+#strikje {
+    position: absolute;
+    top: -19px;
+    right: -26px;
+    width: 90px;
+    transform: rotate(35deg);
+}
+
+#strikjeTwee {
+    position: absolute;
+    top: -19px;
+    left: -26px;
+    width: 90px;
+    transform: rotate(-35deg);
+}
+
+#strikjeDrie {
+    position: absolute;
+    top: 486px;
+    left: -30px;
+    width: 90px;
+    transform: rotate(35deg);
+}
+
+#strikjeVier {
+    position: absolute;
+    top: 487px;
+    right: -26px;
+    width: 90px;
+    transform: rotate(-35deg);
+} 
+
+#middenRechthoek span#Tekst{
+    position: absolute;
+    top: 87px;
+    left: 16px;
+    font-size: 54px;
+    font-family: 'Harrington', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#kittyKnife {
+    position: absolute;
+    top: 298px;
+    right: 59px;
+    width: 200px;
+} 
+
+#kittyPistol {
+    position: absolute;
+    top: 298px;
+    left: 59px;
+    width: 200px;
+} 
+</style>
 </body>
-
 </html>
