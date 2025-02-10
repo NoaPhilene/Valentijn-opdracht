@@ -66,6 +66,14 @@
     color: white;
 }
 
+#middenRechthoek span#credits{
+    position: absolute;
+    bottom: 1px;
+    left: 250px;
+    font-size: 35px;
+    font-family: 'LucySaidOK', sans-serif;
+    color: #e54196;
+}
 @font-face {
     font-family: 'LucySaidOK';
     src: url('fonts/lucy-said-ok-font/LucySaidOkPersonalUseItalic-OV9ee.ttf') format('truetype');
@@ -108,7 +116,6 @@ audio {
     width: 221px;
     transform: rotate(25deg);
 }
-
 
 #RozeHartjes{
     position: absolute;
