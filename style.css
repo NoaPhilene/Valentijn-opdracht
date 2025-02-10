@@ -109,13 +109,17 @@ audio {
     transform: rotate(25deg);
 }
 
-/*
+
 #RozeHartjes{
     position: absolute;
-    right: 445px;
+    right: 656px;
     top: 330px;
     width: 221px;
-    transform: rotate(25deg);
 }
-    <img src="assets\pink_hearts-removebg-preview.png" id="RozeHartjes">
-    */
+
+#RozeHartjesFlip{
+    position: absolute;
+    left: 656px;
+    top: 330px;
+    width: 221px;
+}
